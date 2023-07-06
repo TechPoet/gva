@@ -1,8 +1,8 @@
 
-<div align=center>
+<div style=" display: flex; justify-content: center">
 <img src="http://qmplusimg.henrongyi.top/gvalogo.jpg" width=300" height="300" />
 </div>
-<div align=center>
+<div style=" display: flex; justify-content: center">
 <img src="https://img.shields.io/badge/golang-1.16-blue"/>
 <img src="https://img.shields.io/badge/gin-1.7.0-lightBlue"/>
 <img src="https://img.shields.io/badge/vue-3.2.25-brightgreen"/>
@@ -174,8 +174,8 @@ swag init
 在工作区配置文件中有`go.toolsEnvVars`字段，是用于`VSCode`自身的go工具环境变量。此外在多go版本的系统中，可以通过`gopath`、`go.goroot`指定运行版本。
 
 ```json
-    "go.gopath": null,
-    "go.goroot": null,
+     "go.gopath": "value",
+     "go.goroot": "value"
 ```
 
 ## 3. 技术选型
@@ -299,7 +299,7 @@ swag init
 
 ```
 
-## 5. 主要功能
+## 5. 主要功能1
 
 - 权限管理：基于`jwt`和`casbin`实现的权限管理。
 - 文件上传下载：实现基于`七牛云`, `阿里云`, `腾讯云` 的文件上传操作(请开发自己去各个平台的申请对应 `token` 或者对应`key`)。
